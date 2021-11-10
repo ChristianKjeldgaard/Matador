@@ -6,7 +6,7 @@ public class Feltvaerdi {
     private int rent;
     private String colour;
 
-    public Feltvaerdi {
+    public Feltvaerdi() {
         name = "";
         type = "";
         price = 0;
@@ -14,7 +14,7 @@ public class Feltvaerdi {
         colour = "";
 
     }
-        public void Felt(name, type, price, rent, colour){
+        public void Felt(String name,String type,int price,int rent,String colour){
             this.name = name;
             this.type = type;
             this.price = price;
