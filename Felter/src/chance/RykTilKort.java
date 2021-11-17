@@ -14,9 +14,7 @@ public class RykTilKort extends Chancekort{
 
     @Override
     public void brug(Spiller s) {
-        while(!s.getFelt().equals(felt)){
-            s.ryk(1);
-        }
+        s.teleporterTil(felt);
     }
 
 }

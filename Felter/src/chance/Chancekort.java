@@ -12,6 +12,7 @@ public abstract class Chancekort {
     }
 
     public abstract void brug(Spiller s);
+
 }
 
 /*

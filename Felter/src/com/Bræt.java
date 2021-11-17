@@ -1,6 +1,6 @@
 package com;
 
-public class Felter {
+public class Bræt {
 
     private Felt[] felts;
 

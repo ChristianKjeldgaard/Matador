@@ -4,13 +4,24 @@ public class Spiller {
     private String name;
     private int age;
     private int money = 35;
-    private int position;
+    private Felt felt;
     String property;
 
     public Spiller(String name, int age){
         this.name = name;
         this.age = age;
     }
+
+    public void ryk(int antal_felter){
+        if(antal_felter == 0){
+            felt.ramt(this);
+        }else{
+            felt = felt.getNæstefelt();
+            ryk(antal_felter-1);
+        }
+    }
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -20,8 +31,8 @@ public class Spiller {
         this.money = money;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
+    public void setPosition(Felt felt) {
+        this.felt = felt;
     }
 
     public void setProperty(String property) {
@@ -36,8 +47,8 @@ public class Spiller {
         return  money;
     }
 
-    public int getPosition(){
-        return position;
+    public Felt getPosition(){
+        return felt;
     }
 
     public String getProperty(){
