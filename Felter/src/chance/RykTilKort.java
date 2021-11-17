@@ -1,5 +1,8 @@
 package chance;
 
+import com.Felt;
+import com.Spiller;
+
 public class RykTilKort extends Chancekort{
 
     private Felt felt;
@@ -15,4 +18,5 @@ public class RykTilKort extends Chancekort{
             s.ryk(1);
         }
     }
+
 }

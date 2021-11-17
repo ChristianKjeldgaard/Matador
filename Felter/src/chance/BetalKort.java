@@ -1,17 +1,20 @@
 package chance;
 
+import com.Spiller;
+
 public class BetalKort extends Chancekort {
 
-    private int Beløb;
+    private int beløb;
 
-    public BetalKort(String iden) {
+    public BetalKort(String iden, int beløb) {
         super(iden);
+        this.beløb = beløb;
+
     }
 
     @Override
-    void brug(Spiller s) {
-
-        s.getKonto(s);
+    public void brug(Spiller s) {
+        s.betal(beløb);
     }
 
 

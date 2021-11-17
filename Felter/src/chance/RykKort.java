@@ -1,5 +1,5 @@
 package chance;
-
+import com.Spiller;
 public class RykKort extends Chancekort{
 
     private int distance;
@@ -11,8 +11,7 @@ public class RykKort extends Chancekort{
 
 
     @Override
-    public  void brug(Spiller s) {
+    public void brug(Spiller s) {
 
-        s.ryk(s);
     }
 }

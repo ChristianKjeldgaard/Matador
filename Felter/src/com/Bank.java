@@ -1,12 +1,25 @@
+package com;
+
+import chance.BetalKort;
+import chance.Chancekort;
+import chance.RykKort;
+import chance.RykTilKort;
+
 class Bank {
 
     private int startingMoney;
     private int lapMoney;
     private String currencySymbol;
     private int wallet;
+    private Chancekort[] chancekort;
 
     public Bank() {
-
+        chancekort = new Chancekort[16]{
+           new RykTilKort("Ryk til START",/*felt*/),
+           new RykKort("Ryk 5 felter", 5),
+           new BetalKort("Du har spist for meget slik. betal M2 til banken", -2);
+           new BetalKort("Du har lavet alle dine lektier. Modtag M2 fra banken.", 2);
+        };
         startingMoney = 0;
         lapMoney = 0;
         currencySymbol = new String();

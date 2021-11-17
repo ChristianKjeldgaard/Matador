@@ -1,3 +1,5 @@
+package com;
+
 public class Spiller {
     private String name;
     private int age;
@@ -42,6 +44,9 @@ public class Spiller {
         return property;
     }
 
+    public void updateMoney(int beløb){
+        money += beløb;
+    }
 
 
 }

@@ -1,5 +1,7 @@
 package chance;
 
+import com.Spiller;
+
 public abstract class Chancekort {
 
     private String iden;
@@ -9,7 +11,7 @@ public abstract class Chancekort {
         this.iden = iden;
     }
 
-    abstract void brug(Spiller k);
+    public abstract void brug(Spiller s);
 }
 
 /*
