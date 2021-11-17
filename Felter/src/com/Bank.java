@@ -69,13 +69,13 @@ class Bank {
 
     public void withdrawFromWallet(int withdrawAmount) {
         if (withdrawAmount > wallet) {
-            System.out.println("Player " + /*playerNumber*/ + " went bankrupt!");
+            System.out.println(spiller + ", du er desværre gået bankerot!");
         } else {
             wallet -= withdrawAmount;
         }
-        public void depositToWallet ( int depositAmount){
+        public void depositToWallet (int depositAmount){
             wallet += depositAmount;
-            System.out.println("Payday for " + /*getPlayerNumber()*/ +" You have earned " + /*rentCharge*/);
+            System.out.println(/*getPlayerNumber()*/ + ", du har tjent" + /*rentCharge*/);
         }
     }
 }
